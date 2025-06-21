@@ -4687,3 +4687,41 @@ input, select, textarea {
 		}
 
 	}
+.project-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.project-card img {
+  transition: 0.3s ease;
+}
+
+.project-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover img {
+  filter: grayscale(30%);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+.posts article p {
+  min-height: 4.5em;
+}

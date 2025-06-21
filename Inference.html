@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>YOLO Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Main Page</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li class="active"><a href="index.html#projects">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/tessa-everett/" class="icon brands fa-linkedin-in"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/tjeverett1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<span class="date">Spring 2025</span>
+					<header class="minor">
+					<h1 style="margin-bottom: 0.5em;">
+						Inference-Time Scaling for 3D Diffusion Models
+					</h1>
+					<div style="display: flex; gap: 0.75em; flex-wrap: wrap;">
+						<a href="index.html#projects" class="button small">Back</a>
+						<a href="images/Inference-Time Scaling for 3-D Diffusion Models.pdf" class="button small icon solid fa-download" download>
+						Download Paper
+						</a>
+					</div>
+					</header>
+					<a href="#" class="image main">
+					<img src="images/architectre1.jpg" alt="Architecture diagram" />
+					</a>
+					
+					<p>
+					3D diffusion models have become a powerful tool for generating high-quality meshes from 2D images—
+					but even state-of-the-art models like InstantMesh still suffer from artifacts, perspective errors,
+					and poor detail in generated outputs. In this project, we developed an inference-time scaling algorithm
+					that enhances the quality of 3D generations without retraining the model. Our method draws inspiration
+					from similar techniques used to improve large language models at inference time.
+					</p>
+
+					<p>
+					We proposed an <strong>Adaptive Best-of-N</strong> sampling strategy that dynamically selects the best
+					output from multiple diffusion attempts using a <strong>multimodal LLM grader</strong>. This grader—
+					implemented using Gemini—scores candidate multiview outputs based on consistency with the input image,
+					aesthetic quality, and internal coherence across views. Our algorithm allocates more compute to harder
+					cases (where outputs initially score poorly), while short-circuiting early when high-quality results are detected.
+					</p>
+
+					<a href="#" class="image main">
+					<img src="images/experiment.png" alt="Experiment diagram" />
+					</a>
+
+					<p>
+					We evaluated our approach on 145 objects sampled from the Objaverse-XL dataset, comparing the original
+					InstantMesh model with our scaled version. Our inference-time scaled model achieved significant improvements
+					across all 2D perceptual metrics (PSNR, SSIM, LPIPS, and F-Score), producing cleaner, more consistent reconstructions.
+					Notably, these improvements were achieved without modifying or retraining the diffusion backbone—highlighting
+					inference-time scaling as a compute-efficient way to boost quality in 3D generative pipelines.
+					</p>
+
+					<a href="#" class="image main">
+					<img src="images/multiview.jpg" alt="Multiview comparison" />
+					</a>
+				</section>
+
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+				
+						<section class="alt">
+							<h3 style ="text-align: center">Address</h3>
+							<p style="text-align: center;"> Cambridge, MA<br />
+							</p>
+						</section> 
+						
+						<section>
+							<h3 style ="text-align: center">Email</h3>
+							<p style="text-align: center;"><a href="#">tjeveret@mit.edu</a></p>
+						</section>
+						<section>
+							<h3 style ="text-align: center">Social</h3>
+							<ul class="icons alt" style ="text-align: center">
+								<li><a href="https://www.linkedin.com/in/tessa-everett/" class="icon brands alt fa-linkedin-in"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/tjeverett1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<!-- <div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -74,13 +74,40 @@ html {
 					
 
 							<section id="projects" class="posts">
-								<article>
+								<article class = "project-card">
 									<header>
-										<span class="date">January 2025</span>
-										<h2><a href="#">Broad IBD Challenge<br />
+										<span class="date">Spring 2025</span>
+										<h2><a href="Inference.html">Inference-Time Scaling<br />for 3D Diffusion Models
+											<div class="overlay">Read More</div>
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/gene_expression.png" alt="" /></a>
+									<a href="Inference.html" class="image fit project-card">
+										<img src="images/architectre1.jpg" alt="Architecture diagram" />
+										<div class="overlay"></div>
+									</a>
+									<p>
+										We proposed a compute-efficient algorithm to improve 3D mesh generation from 2D images
+										using inference-time scaling. By integrating adaptive Best-of-N sampling and a multimodal
+										LLM verifier (Gemini), we boost output quality without retraining. Evaluated on 145 objects
+										from the Objaverse-XL dataset, our method showed measurable gains across all 2D perceptual
+										metrics.
+									</p>
+									<ul class="actions special">
+										<li><a href="Inference.html" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<article class="project-card">
+									<header>
+										<span class="date">January 2025</span>
+										<h2><a href="Broad-IBD-Challenge.html">Broad IBD Challenge<br />
+										<div class="overlay">Read More</div>
+										</a></h2>
+									</header>
+									<a href="Broad-IBD-Challenge.html" class="image fit project-card">
+										<img src="images/gene_expression.png" alt="" />
+										<div class="overlay"></div>
+									</a>
 									<p>In the Autoimmune Disease Machine Learning Challenge organized by the Eric and Wendy Schmidt Center at the Broad Institute and partners, our team focused on Crunch 1, 
 										where the task was to predict spatial transcriptomics profiles from routine H&E pathology images. Specifically, we aimed to “inpaint” held-out patches of Xenium spatial
 										 transcriptomics data by leveraging the surrounding tissue’s matched H&E images and existing spatial transcriptomic ...
@@ -89,13 +116,24 @@ html {
 										<li><a href="Broad-IBD-Challenge.html" class="button">View Project</a></li>
 									</ul>
 								</article>
-								<article>
+								<article class="project-card">
 									<header>
 										<span class="date">Summer 2024</span>
-										<h2><a href="#">YOLO Object Detection<br />
+										<h2><a href="YOLO_project.html">YOLO Object Detection<br />
+										<div class="overlay"></div>
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/YOLO_cover.png" alt="" /></a>
+									<a href="YOLO_project.html" class="image fit project-card">
+										<img src="images/YOLO_cover.png" alt="" />
+										<div class="overlay"></div>
+									</a>
+									<header>
+										<a href="YOLO_project.html">
+										<h2>
+										<div class="overlay">Read More</div>
+										</h2>
+										</a>
+									</header>
 									<p> In my Summer 2024 internship, I used YOLOv8 and YOLOv10 to train object detection and object segmentation models. I labeled images using MakeSenese
 										AI and trained the YOLO models in AWS. During this project, I built different methods to adress class imbalance, utilizing under and oversampling methods, 
 										preprocessing, and splitting datasets. Addtionaly, I aided in the transition from local training to cloud-based training ... </p>
@@ -103,13 +141,17 @@ html {
 										<li><a href="YOLO_project.html" class="button">View Project</a></li>
 									</ul>
 								</article>
-								<article>
+								<article class="project-card">
 									<header>
 										<span class="date">January 2024</span>
-										<h2><a href="#">MIT PokerBots<br />
+										<h2><a href="PokerBot_2024.html">MIT PokerBots<br />
+										<div class="overlay">Read More</div>
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pokerbots.png" alt="" /></a>
+									<a href="PokerBot_2024.html" class="image fit project-card">
+										<img src="images/pokerbots.png" alt="" />
+										<div class="overlay"></div>
+									</a>
 									<p>I participated in MIT's 2024 PokerBot Competition, where my partner and I spent a month
 										designing, implementing, and testing a Python pokerbot to play the 2024 auction hold'em variation. 
 										During this month of dedicated work, I focussed on project-based coding and strategy development. 
@@ -119,6 +161,7 @@ html {
 										<li><a href="PokerBot_2024.html" class="button">View Project</a></li>
 									</ul>
 								</article>
+								
 								
 						
 							</section>
