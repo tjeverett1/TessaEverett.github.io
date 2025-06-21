@@ -4725,3 +4725,8 @@ input, select, textarea {
 .posts article p {
   min-height: 4.5em;
 }
+.image.main.reduced-size img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
